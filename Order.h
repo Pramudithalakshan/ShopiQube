@@ -18,6 +18,7 @@ public:
         this->qty=qty;
         this->status=status;
     }
+    Order(){}
     std::string getOrderId(){
         return orderId;
     }
