@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include "Customer.h"
 using namespace std;
 
 bool getMainMenuOption(int option)
@@ -7,7 +8,7 @@ bool getMainMenuOption(int option)
     switch (option)
     {
     case 1:
-        cout<<"This is option 1"<<endl;
+        placeOrder();
         break;
     case 2:
         break;
@@ -25,10 +26,11 @@ bool getMainMenuOption(int option)
     }
     return true;
 }
-
+bool placeOrder(){
+    
+}
 int main()
 {
-
     while (true)
     {
         cout << "-----------------------------------------------------" << endl;
