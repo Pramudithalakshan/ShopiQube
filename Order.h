@@ -1,8 +1,8 @@
-#ifndef CUSTOMER_H
-#define CUSTOMER_H
+#ifndef ORDER_H
+#define ORDER_H
 
 #include <string>
-class Customer
+class Order
 {
 private:
     std::string orderId;
@@ -11,20 +11,20 @@ private:
     int qty;
     int status;
 public:
-    Customer(string OrderId,string customerName,string phoneNo,int qty,int status){
+    Order(std::string OrderId,std::string customerName,std::string phoneNo,int qty,int status){
         this->orderId=orderId;
         this->custoemrName=custoemrName;
         this->phoneNo=phoneNo;
         this->qty=qty;
         this->status=status;
     }
-    string getOrderId(){
+    std::string getOrderId(){
         return orderId;
     }
-    string getCustomerName(){
+    std::string getCustomerName(){
         return custoemrName;
     }
-    string getphoneNo(){
+    std::string getphoneNo(){
         return phoneNo;
     }
     int getQty(){

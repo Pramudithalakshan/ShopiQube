@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdio>
-#include "Customer.h"
+#include "Order.h"
 using namespace std;
 
 bool getMainMenuOption(int option)
@@ -27,7 +27,15 @@ bool getMainMenuOption(int option)
     return true;
 }
 bool placeOrder(){
-    
+        cout << "-----------------------------------------------------" << endl;
+        cout << "|                   Place Order                     |" << endl;
+        cout << "-----------------------------------------------------" << endl;
+        cout << endl;
+        cout << endl;
+        cout <<""<<endl;
+}
+string generateOrderId(){
+
 }
 int main()
 {
