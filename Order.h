@@ -6,14 +6,14 @@ class Order
 {
 private:
     std::string orderId;
-    std::string custoemrName;
     std::string phoneNo;
+    std::string customerName;
     int qty;
     int status;
 public:
-    Order(std::string OrderId,std::string customerName,std::string phoneNo,int qty,int status){
+    Order(std::string OrderId,std::string phoneNo,std::string customerName,int qty,int status){
         this->orderId=orderId;
-        this->custoemrName=custoemrName;
+        this->customerName=customerName;
         this->phoneNo=phoneNo;
         this->qty=qty;
         this->status=status;
@@ -23,7 +23,7 @@ public:
         return orderId;
     }
     std::string getCustomerName(){
-        return custoemrName;
+        return customerName;
     }
     std::string getphoneNo(){
         return phoneNo;
